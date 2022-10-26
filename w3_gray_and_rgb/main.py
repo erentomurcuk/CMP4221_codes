@@ -1,3 +1,4 @@
+
 import numpy as np
 import cv2 as cv
 
@@ -46,5 +47,7 @@ print(f"Coloured red: {red64[0,0]}")
 print(f"Grayscale blue: {_64pimg_blue[0,0]}")
 print(f"Grayscale green: {_64pimg_green[0,0]}")
 print(f"Grayscale red: {_64pimg_red[0,0]}")
+
+print(f"Colour img: {_64pimg[0,0]}")
 
 print(f"Grayscale full image: {_64pimg_grayscale[0,0]}")
