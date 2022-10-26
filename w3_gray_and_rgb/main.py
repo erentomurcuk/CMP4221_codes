@@ -1,6 +1,7 @@
 import numpy as np
 import cv2 as cv
 
+# Create single-colour images
 blue64 = np.zeros((64,64,3),np.uint8)
 green64 = np.zeros((64,64,3),np.uint8)
 red64 = np.zeros((64,64,3),np.uint8)
@@ -36,3 +37,14 @@ cv.imwrite("64p_red.png", _64pimg_red)
 cv.imwrite("64p_blue_clr.png", blue64)
 cv.imwrite("64p_green_clr.png", green64)
 cv.imwrite("64p_red_clr.png", red64)
+
+# Comparison of the (0,0) pixel on the B-G-R coloured/monochrome and stock monochrome image respectively
+print(f"Coloured blue: {blue64[0,0]}")
+print(f"Coloured green: {green64[0,0]}")
+print(f"Coloured red: {red64[0,0]}")
+
+print(f"Grayscale blue: {_64pimg_blue[0,0]}")
+print(f"Grayscale green: {_64pimg_green[0,0]}")
+print(f"Grayscale red: {_64pimg_red[0,0]}")
+
+print(f"Grayscale full image: {_64pimg_grayscale[0,0]}")
