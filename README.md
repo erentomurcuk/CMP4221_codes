@@ -1,3 +1,3 @@
 # CMP4221_codes
 
-kıvır kıvır kıvır
+homeworks and stuff nothing fancy here
